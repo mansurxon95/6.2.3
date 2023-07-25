@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickFragment"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Polov"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:id="@+id/name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kerakli mahsulotlar"
+            android:textSize="25sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/maxsulot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="6-7 dona kattaroq sabzi\n0,5 kg go’sht\n1 ta piyoz/n3 cho’mich yog’\ndumba\n700 gr guruch. ( oilada 4 kishimiz shiga mo’ljallab qildim)\nzira"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Taom tayyorlanish tartibi"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/jarayon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Avval ishni qizib turgan qozonga dumbani to’g’rab soldim, uni yog’i chiqgandan so’ng jizzalarini ovoldim. Ustiga 3 cho’mich yog’ soldim. Keyin piyozni kattaroq qilib yarim parrak qilib to’g’rab soldim. Ketidan go’shtni ham soldim. Go’sht tuzlangan bo’lsa yaxshi, agar tuzlanmagan bo’lsa yaxshilab tuz sepib keyin yog’ga solsak go’shtga maza kirib qovriladi. Buvim shunday der edilar. Man oshga go’shtni tuzlab qo’yaman, bir ikki kun avval. Palovimizni rangi piyozimizni qovirishimizga bog’liq. Oilamga qoraroq osh yoqadi, shuning uchun piyoz qizarguncha sabzilarni to’radim."/>
+    </LinearLayout>
+
+</LinearLayout>

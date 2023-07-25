@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homFragment">
+
+    <fragment
+        android:id="@+id/homFragment"
+        android:name="com.example.a623.HomFragment"
+        android:label="fragment_hom"
+        tools:layout="@layout/fragment_hom" >
+        <action
+            android:id="@+id/action_homFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:popUpTo="@id/addFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/menuFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.a623.addFragment"
+        android:label="Taom qo’shish"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_homFragment"
+            app:destination="@id/homFragment"
+            app:popUpTo="@id/addFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.a623.MenuFragment"
+        android:label="Barcha taomlar"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_homFragment"
+            app:destination="@id/homFragment"
+            app:popUpTo="@id/menuFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_menuFragment_to_clickFragment"
+            app:destination="@id/clickFragment"
+            app:popUpTo="@id/menuFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/clickFragment"
+        android:name="com.example.a623.ClickFragment"
+        tools:layout="@layout/fragment_click" />
+</navigation>
